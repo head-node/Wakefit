@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+.input-container{
+  display: flex; 
+  justify-content: center; 
+  margin: 30px;
+}
+.input-container input {
+  margin:0px 10px ;
+  border-radius: 4px; 
+  outline: none;
+}
+ button {
+  border: none;
+  border-radius: 4px;
+}
+ button:hover{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+.App {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.App .column {
+  width: 30%;
+}
+
+.droppable-col {
+  width: 100%;
+  background-color: rgb(126, 121, 121);
+  padding: 10px 10px 0 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-bottom: 10px;
+  background-color:grey;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.item.dragging {
+  background-color:green;
+}
